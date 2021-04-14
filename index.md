@@ -18,4 +18,19 @@ This is a working journal that I would like to share some problem that I have en
 {% endif %}
 {% endfor %}
 
-<!-- - [Petalinux on Windows 10 with WSL](./blog/2021/petalinux-on-windows-10-with-wsl.md) -->
+
+{{ site.html_pages }}
+
+{% for page in site.html_pages %}
+
+{{ page.path }}
+
+{{ page.modified_time }}
+
+{{ page.name }}
+
+{{ page.basename }}
+
+{{ page.extname }}
+
+{% endfor %}
