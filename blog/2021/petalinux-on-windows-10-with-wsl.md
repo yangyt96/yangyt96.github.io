@@ -47,9 +47,11 @@ mkdir -p ~/petalinux/2018.3/
 
 6. Install petalinux:
 
+
 ```bash
 <PATH-TO-PETALINUX-INSTALLER>/petalinux-v2018.3-final-installer.run ~/petalinux/2018.3
 ```
+
 
 Notes: The error related to tftp server will occur, and I'm ignoring this, because I'm not using the tftp server on WSL2 to transfer file to my fpga.
 
