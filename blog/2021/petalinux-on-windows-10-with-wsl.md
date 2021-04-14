@@ -46,6 +46,7 @@ mkdir -p ~/petalinux/2018.3/
 ```
 
 6. Install petalinux:
+
 ```bash
 <PATH-TO-PETALINUX-INSTALLER>/petalinux-v2018.3-final-installer.run ~/petalinux/2018.3
 ```
@@ -55,6 +56,7 @@ Notes: The error related to tftp server will occur, and I'm ignoring this, becau
 ## Run PetaLinux
 
 1. Source the petalinux, create the petalinux project and get the hardware description of your vivado project.
+
 ```bash
 source ~/petalinux/2018.3/settings.sh
 petalinux-create --type project --template zynq --name peta_project0
@@ -67,6 +69,7 @@ A system configuration will pop up and exit it.
 ![petalinux](petalinux.png)
 
 2. Build and package the BOOT.BIN & images.ub file.
+
 ```bash
 petalinux-build
 petalinux-package --boot --format BIN --fsbl images/linux/zynq_fsbl.elf --u-boot images/linux/u-boot.elf --fpga images/linux/system.bit --force
