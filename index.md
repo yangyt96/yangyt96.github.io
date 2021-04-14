@@ -7,7 +7,9 @@ This is a working journal that I would like to share some problem that I have en
 {% if file.extname == ".md" && file.basename != "index" %}
 [{{ file.basename }}]({{site.baseurl}}/{{file.basename}}.html)
 
-{{file.path}}
+{{ file.basename }}
+
+{{ file.path }}
 
 {{file.name}}
 
