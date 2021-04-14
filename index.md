@@ -1,8 +1,7 @@
-## Welcome to GitHub Pages
+## Welcome to yangyt96 space
 
-You can use the [editor on GitHub](https://github.com/yangyt96/yangyt96.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+This is a working journal that I would like to share some problem that I have encountered and engineering contents that I have solved it.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
 
