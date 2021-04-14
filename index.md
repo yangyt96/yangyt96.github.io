@@ -8,5 +8,5 @@ This is a working journal that I would like to share some problem that I have en
 
 [{{page.title}}]({{site.baseurl}}{{page.url}})
 
-{% enfif %}
+{% endif %}
 {% endfor %}
