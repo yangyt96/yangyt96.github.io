@@ -4,8 +4,14 @@ This is a working journal that I would like to share some problem that I have en
 
 ## Blog post
 {% for file in site.static_files %}
-{% if file.extname == ".md" %}
+{% if file.extname == ".md" && file.basename != "index" %}
 [{{ file.basename }}]({{site.baseurl}}/{{file.basename}}.html)
+
+file.path
+
+file.name
+
+
 {% endif %}
 {% endfor %}
 
