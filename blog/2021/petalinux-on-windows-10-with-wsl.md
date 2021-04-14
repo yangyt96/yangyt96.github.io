@@ -66,8 +66,7 @@ cd peta_project0
 petalinux-config --get-hw-description <PATH-TO-VIVADO-PROJECT>/project_*.sdk/
 ```
 
-A system configuration will pop up and exit it.
-
+    A system configuration will pop up and exit it.
 ![petalinux](petalinux.png)
 
 2. Build and package the BOOT.BIN & images.ub file.
@@ -78,8 +77,8 @@ petalinux-package --boot --format BIN --fsbl images/linux/zynq_fsbl.elf --u-boot
 ```
 
 ## References
-- https://www.xilinx.com/support/documentation/sw_manuals/xilinx2018_3/ug1144-petalinux-tools-reference-guide.pdf
-- https://stackoverflow.com/a/43399827/10058074
-- https://docs.microsoft.com/en-us/windows/wsl/install-manual
-- https://wiki.debian.org/Multiarch/Implementation
-- https://forums.xilinx.com/t5/Embedded-Linux/Installation-of-PetaLinux-in-Windows-10/td-p/1168468
+- https://www.xilinx.com/support/documentation/sw_manuals/xilinx2018_3/ug1144-petalinux-tools-reference-guide.pdf.
+- https://stackoverflow.com/a/43399827/10058074.
+- https://docs.microsoft.com/en-us/windows/wsl/install-manual.
+- https://wiki.debian.org/Multiarch/Implementation.
+- https://forums.xilinx.com/t5/Embedded-Linux/Installation-of-PetaLinux-in-Windows-10/td-p/1168468.
