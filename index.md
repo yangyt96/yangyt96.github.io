@@ -19,18 +19,10 @@ This is a working journal that I would like to share some problem that I have en
 {% endfor %}
 
 
-{{ site.html_pages }}
-
 {% for page in site.html_pages %}
 
-{{ page.path }}
+{{page.title}}
 
-{{ page.modified_time }}
-
-{{ page.name }}
-
-{{ page.basename }}
-
-{{ page.extname }}
+{{page.url}}
 
 {% endfor %}
