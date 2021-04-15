@@ -1,5 +1,7 @@
 # PetaLinux on Windows 10 with WSL
 
+{{ page.last-modified-date }}
+
 Normally, if you want to run PetaLinux on Windows 10 machine, it is required to run Linux in VirtualBox. However, Windows Subsystem Linux 2 (WSL2) has solved this problem, and the performance of running PetaLinux has increase greatly instead of running it on a virtual machine.
 
 I will share the installation guide and the step that how I run PetaLinux on Windows 10 machine without VirtualBox.
