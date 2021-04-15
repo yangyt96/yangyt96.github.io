@@ -80,3 +80,5 @@ petalinux-package --boot --format BIN --fsbl images/linux/zynq_fsbl.elf --u-boot
 - https://docs.microsoft.com/en-us/windows/wsl/install-manual
 - https://wiki.debian.org/Multiarch/Implementation
 - https://forums.xilinx.com/t5/Embedded-Linux/Installation-of-PetaLinux-in-Windows-10/td-p/1168468
+
+{{ article.published_at | date: "%a, %b %d, %y" }}
