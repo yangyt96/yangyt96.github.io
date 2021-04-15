@@ -1,3 +1,8 @@
+---
+layout: post
+title: "SSH Communication of Zedboard and PC with Ethernet"
+---
+
 # SSH Communication of Zedboard and PC with Ethernet
 
 Originally, I am searching for the method to do file transfer between a zedboard and pc, then I get to [this](http://svenand.blogdrives.com/archive/184.html#.YHdYQ-j7SUl). From this website, the connection between the zedboard and pc requires a modem router and 2 ethernet cable. However, I don't have 2 ethernet cables! Instead of connecting your host pc with ethernet cable, you can connect your pc to the modem router through wifi connection.
