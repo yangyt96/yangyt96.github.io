@@ -14,3 +14,5 @@ defaults:
       layout: "post"
       author: "Yang"
 
+
+theme: jekyll-theme-slate
