@@ -12,3 +12,11 @@ This is a working journal that I would like to share some problem that I have en
 {% endfor %}
 
 {{ site.baseurl }}{% post_url 2021-04-15-test %}
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
