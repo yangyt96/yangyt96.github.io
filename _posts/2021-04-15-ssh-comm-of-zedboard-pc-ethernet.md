@@ -13,7 +13,7 @@ I'm using Windows 10 machine and [connect the zedboard to my PC](http://svenand.
 
 So, the connection of my PC and the Zedboard is look like this:
 
-![connection](/assets/2021-04-15-ssh-comm-of-zedboard-pc-ethernet/connect_pc_zedboard.png)
+![connection](/assets/posts/2021-04-15-ssh-comm-of-zedboard-pc-ethernet/connect_pc_zedboard.png)
 
 
 ## Prerequisite
@@ -25,11 +25,11 @@ Checkout [this](http://svenand.blogdrives.com/archive/182.html#.YHf9YOj7SUk).
 ### 1. Connect to Zedboard
 Open Tera Term and connect to the Zedboard.
 
-![tera_term_connect](/assets/2021-04-15-ssh-comm-of-zedboard-pc-ethernet/tera_term_connect.png)
+![tera_term_connect](/assets/posts/2021-04-15-ssh-comm-of-zedboard-pc-ethernet/tera_term_connect.png)
 
 ### 2. Login to the PetaLinux
 
-![login_zedboard](/assets/2021-04-15-ssh-comm-of-zedboard-pc-ethernet/login_zedboard.png)
+![login_zedboard](/assets/posts/2021-04-15-ssh-comm-of-zedboard-pc-ethernet/login_zedboard.png)
 
 
 ### 3. Check Zedboard IP Address
@@ -40,7 +40,7 @@ ifconfig
 
 You will see that the IP address of your Zedboard is not setup. (If you use a modem router, the modem router will help you to setup the IP address.)
 
-![zedboard_no_ip](/assets/2021-04-15-ssh-comm-of-zedboard-pc-ethernet/zedboard_no_ip.png)
+![zedboard_no_ip](/assets/posts/2021-04-15-ssh-comm-of-zedboard-pc-ethernet/zedboard_no_ip.png)
 
 
 ### 4. Set your own defined IP address
@@ -50,16 +50,16 @@ I set it to 169.254.154.249
 ifconfig eth0 169.254.154.249
 ```
 
-![zedboard_new_ip](/assets/2021-04-15-ssh-comm-of-zedboard-pc-ethernet/zedboard_new_ip.png)
+![zedboard_new_ip](/assets/posts/2021-04-15-ssh-comm-of-zedboard-pc-ethernet/zedboard_new_ip.png)
 
 ### 5. Check you Windows 10 PC internet status
 Open you Windows 10: Control Panel > Network and Internet > Network and Sharing Center.
 
-![win_ethernet](/assets/2021-04-15-ssh-comm-of-zedboard-pc-ethernet/win_ethernet.png)
+![win_ethernet](/assets/posts/2021-04-15-ssh-comm-of-zedboard-pc-ethernet/win_ethernet.png)
 
 Then click on the "Ethernet" to confirm that your Windows 10 machine has connected to your Zedboard successfully.
 
-![win_ethernet_enable](/assets/2021-04-15-ssh-comm-of-zedboard-pc-ethernet/win_ethernet_enable.png)
+![win_ethernet_enable](/assets/posts/2021-04-15-ssh-comm-of-zedboard-pc-ethernet/win_ethernet_enable.png)
 
 ### 6. Ping your Zedboard
 Open Windows 10 CMD and test whether you can ping to your Zedboard through Ethernet by typing the following command in Windows 10 CMD.
@@ -68,12 +68,12 @@ Open Windows 10 CMD and test whether you can ping to your Zedboard through Ether
 ping 169.254.154.249
 ```
 
-![ping_zedboard](/assets/2021-04-15-ssh-comm-of-zedboard-pc-ethernet/ping_zedboard.png)
+![ping_zedboard](/assets/posts/2021-04-15-ssh-comm-of-zedboard-pc-ethernet/ping_zedboard.png)
 
 ### 7. Login to Zedboard through SSH from your PC
 If your Windows 10 doesn't have SSH command, checkout [this](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse). You will need to use the SSH client on Windows 10 only, because the PetaLinux runs as SSH server as default.
 
-![ssh_zedboard](/assets/2021-04-15-ssh-comm-of-zedboard-pc-ethernet/ssh_zedboard.png)
+![ssh_zedboard](/assets/posts/2021-04-15-ssh-comm-of-zedboard-pc-ethernet/ssh_zedboard.png)
 
 Notes: You can use the "scp" command to copy file fromt/to Zedboard.
 
