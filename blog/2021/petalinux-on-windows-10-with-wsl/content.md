@@ -66,9 +66,9 @@ cd peta_project0
 petalinux-config --get-hw-description <PATH-TO-VIVADO-PROJECT>/project_*.sdk/
 ```
 
-A system configuration will pop up and exit it.
+    A system configuration will pop up and exit it.
 
-    ![petalinux](petalinux.png)
+![petalinux](petalinux.png)
 
 2. Build and package the BOOT.BIN & images.ub file.
 
