@@ -25,39 +25,36 @@ export DISPLAY=`grep -oP "(?<=nameserver ).+" /etc/resolv.conf`:0.0
 ```
 
 ## Installation
-1. Download [petalinux-2018.3](https://www.xilinx.com/member/forms/download/xef.html?filename=petalinux-v2018.3-final-installer.run).
+### 1. Download [petalinux-2018.3](https://www.xilinx.com/member/forms/download/xef.html?filename=petalinux-v2018.3-final-installer.run).
 
-2. Open Ubuntu-16.04.6 terminal
+### 2. Open Ubuntu-16.04.6 terminal
 
-3. [Add system architecture](https://wiki.debian.org/Multiarch/Implementation) and update you sudo apt.
+### 3. [Add system architecture](https://wiki.debian.org/Multiarch/Implementation) and update you sudo apt.
 ```bash
 dpkg --add-architecture i386
 sudo apt update
 ```
 
-4. Install the environment for petalinux:
+### 4. Install the environment for petalinux:
 ```bash
 sudo apt-get install -y gcc git make net-tools libncurses5-dev tftpd zlib1g-dev libssl-dev flex bison libselinux1 gnupg wget diffstat chrpath socat xterm autoconf libtool tar unzip texinfo zlib1g-dev gcc-multilib build-essential libsdl1.2-dev libglib2.0-dev zlib1g:i386 screen pax gzip
 ```
 
-5. Make directory to install petalinux:
+### 5. Make directory to install petalinux:
 ```bash
 mkdir -p ~/petalinux/2018.3/
 ```
 
-6. Install petalinux:
-
-
+### 6. Install petalinux:
 ```bash
 <PATH-TO-PETALINUX-INSTALLER>/petalinux-v2018.3-final-installer.run ~/petalinux/2018.3
 ```
-
 
 Notes: The error related to tftp server will occur, and I'm ignoring this, because I'm not using the tftp server on WSL2 to transfer file to my fpga.
 
 ## Run PetaLinux
 
-1. Source the petalinux, create the petalinux project and get the hardware description of your vivado project.
+### 1. Source the petalinux, create the petalinux project and get the hardware description of your vivado project.
 
 ```bash
 source ~/petalinux/2018.3/settings.sh
@@ -70,7 +67,7 @@ A system configuration will pop up and exit it.
 
 ![petalinux](petalinux.png)
 
-2. Build and package the BOOT.BIN & images.ub file.
+### 2. Build and package the BOOT.BIN & images.ub file.
 
 ```bash
 petalinux-build
