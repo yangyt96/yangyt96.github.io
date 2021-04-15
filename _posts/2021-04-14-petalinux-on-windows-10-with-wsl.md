@@ -1,3 +1,9 @@
+---
+layout: post
+title: "PetaLinux on Windows 10 with WSL"
+---
+
+
 # PetaLinux on Windows 10 with WSL
 
 {{ page.last-modified-date }}
@@ -67,7 +73,7 @@ petalinux-config --get-hw-description <PATH-TO-VIVADO-PROJECT>/project_*.sdk/
 
 A system configuration will pop up and exit it.
 
-![petalinux](petalinux.png)
+![petalinux](/assets/2021-04-14-petalinux-on-windows-10-with-wsl/petalinux.png)
 
 ### 2. Build and package the BOOT.BIN & images.ub file.
 
