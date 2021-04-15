@@ -12,18 +12,23 @@ So, the connection of my PC and the Zedboard is look like this:
 
 
 ## Prerequisite
-1. Setup PetaLinux on Zedboard. [Checkout this](http://svenand.blogdrives.com/archive/182.html#.YHf9YOj7SUk)
+### 1. Setup PetaLinux on Zedboard.
+Checkout [this](http://svenand.blogdrives.com/archive/182.html#.YHf9YOj7SUk).
 
 ## File transfer between Zedboard and PC
 
-1. Open Tera Term and connect to the Zedboard. Then, login to the PetaLinux of your Zedboard.
+### 1. Connect to Zedboard
+Open Tera Term and connect to the Zedboard.
 
 ![tera_term_connect](./tera_term_connect.png)
+
+### 2. Login to the PetaLinux
+
 ![login_zedboard](./login_zedboard.png)
 
 
-2. Check your ethernet (eth0) IPv4 Address by typing in the following command to tera term terminal.
-
+### 3. Check Zedboard IP Address
+Check your ethernet (eth0) IPv4 Address by typing in the following command to tera term terminal.
 ```bash
 ifconfig
 ```
@@ -33,7 +38,8 @@ You will see that the IP address of your Zedboard is not setup. (If you use a mo
 ![zedboard_no_ip](./zedboard_no_ip.png)
 
 
-3. Set your own defined IP address. And I set it to 169.254.154.249
+### 4. Set your own defined IP address
+I set it to 169.254.154.249
 
 ```bash
 ifconfig eth0 169.254.154.249
@@ -41,7 +47,8 @@ ifconfig eth0 169.254.154.249
 
 ![zedboard_new_ip](./zedboard_new_ip.png)
 
-4. Open you Windows 10: Control Panel > Network and Internet > Network and Sharing Center.
+### 5. Check you Windows 10 PC internet status
+Open you Windows 10: Control Panel > Network and Internet > Network and Sharing Center.
 
 ![win_ethernet](./win_ethernet.png)
 
@@ -49,7 +56,8 @@ Then click on the "Ethernet" to confirm that your Windows 10 machine has connect
 
 ![win_ethernet_enable](./win_ethernet_enable.png)
 
-5. Open Windows 10 CMD and test whether you can ping to your Zedboard through Ethernet by typing the following command in Windows 10 CMD.
+### 6. Ping your Zedboard
+Open Windows 10 CMD and test whether you can ping to your Zedboard through Ethernet by typing the following command in Windows 10 CMD.
 
 ```bash
 ping 169.254.154.249
@@ -57,7 +65,8 @@ ping 169.254.154.249
 
 ![ping_zedboard](./ping_zedboard.png)
 
-6. Login to Zedboard through SSH from your PC. If your Windows 10 doesn't have SSH command, checkout [this](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse). You will need to use the SSH client on Windows 10 only, because the PetaLinux runs as SSH server as default.
+### 7. Login to Zedboard through SSH from your PC
+If your Windows 10 doesn't have SSH command, checkout [this](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse). You will need to use the SSH client on Windows 10 only, because the PetaLinux runs as SSH server as default.
 
 ![ssh_zedboard](./ssh_zedboard.png)
 
