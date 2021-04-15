@@ -11,5 +11,6 @@ defaults:
       path: "_posts"
       type: "post"
     values:
-      layout: "Posts"
-      author: "test"
+      layout: "post"
+      author: "Yang"
+
