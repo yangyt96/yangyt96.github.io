@@ -10,3 +10,5 @@ This is a working journal that I would like to share some problem that I have en
 
 {% endif %}
 {% endfor %}
+
+{% post_url 2021-04-15-test %}
